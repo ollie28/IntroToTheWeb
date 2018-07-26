@@ -1,9 +1,6 @@
 require 'sinatra'
 
-get '/' do
-  'hello!'
-end
-
-get '/secret' do
-  'This is a secret page'
+get '/cat' do
+@name = ["Chi", "Oscar", "Colo"].sample
+  erb (:index)
 end
