@@ -1,10 +1,15 @@
-get '/cat' do
-  "<div style='border: 3px dashed green'>
+  <div style='border: 3px dashed green'>
   <img src='http://bit.ly/1eze8aE'>
-  </div>"
-end
+  </div>
 
+
+<% if @name %>
 <h1>My name is <%= @name %></h1>
+<% end %>
+<form action="/random-cat">
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
 <div style='border: 3px dashed green'>
   <img src='http://bit.ly1eze8aE'>
 </div>
